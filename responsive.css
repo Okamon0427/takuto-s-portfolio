@@ -1,0 +1,61 @@
+@media (min-width: 624px) {
+  .topmenu-wrapper {
+    display: block;
+  }
+
+  .togglemenu-wrapper {
+    display: none;
+  }
+
+  .face-image {
+    height: 250px;
+    width: 250px;
+  }
+
+  .about-text {
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  #skills .container {
+    display: flex;
+  }
+
+  .skill {
+    width: 180px;
+  }
+
+  .project {
+    width: 400px;
+  }
+
+  .social-icon {
+    margin: 0 50px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  #about .container {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-text {
+    margin: 30px 0 0 50px;
+    height: 250px;
+  }
+
+  .skill {
+    width: 300px;
+  }
+
+  #projects .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+}
