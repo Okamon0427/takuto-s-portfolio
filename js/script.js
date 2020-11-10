@@ -1,6 +1,6 @@
 $(function() {
   
-  // 読み込み時のタイトルとサブタイトルの動き
+  // Title fade-in when reloading
   $('#top-title').css({opacity:'0'});
   setTimeout(function() {
     $('#top-title').animate({opacity:'1'},1500)
@@ -10,7 +10,7 @@ $(function() {
     $('#top-subtitle').addClass('scrollin');
   });
 
-    // トグルを押した際のサイドバーの開閉とボタン画像変更
+  // nav open and close by toggle (in Smartphone)
   $('#menu-toggle').click(function() {
       $(this).toggleClass('active');
       if ($(this).hasClass('active')) {
@@ -22,7 +22,7 @@ $(function() {
       }
   });
 
-//   トグル内のメニューを押した際のサイドバーの開閉とボタン画像変更
+  // nav open and close when nav menu is selected
   $('#sidebar-nav a').click(function() {
       $('#menu-toggle').toggleClass('active');
       if ($('#menu-toggle').hasClass('active')) {
@@ -34,7 +34,7 @@ $(function() {
       }
   });
 
-    //   トグル内のメニュー、またはグローバルメニューを押した際のページ内リンク
+  // pagenation
   $('.menu-item').click(function() {
     var id = $(this).attr('href');
     var position = $(id).offset().top;
@@ -42,11 +42,10 @@ $(function() {
     return false;
   });
 
-//   SUBMITボタンまたは一番下のボタンを押した際のトップへの移動
+  // scroll back top button by SUBMIT button and top scroll button bottommost
   $('.scrolltop a, .btn-contact').click(function() {
     $('html, body').animate( {'scrollTop':0}, 'slow');
     return false;
   });
-
 });
 
