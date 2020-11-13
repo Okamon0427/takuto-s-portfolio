@@ -53,11 +53,20 @@ ul {
 
 /* --------------------------------------------------------- */
 /* Header */
+/* .top-wrapper {
+  height: 600px;
+  padding: 160px 0 100px 0;
+  background-image: url("../img/top.jpg");
+  background-size: cover;
+} */
+
 .top-wrapper {
   height: 600px;
   padding: 160px 0 100px 0;
   background-image: url("../img/top.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #top-title {
